@@ -15,6 +15,8 @@ if [ -z "$DESCRIPTION" ]; then
   DESCRIPTION="this is the description!"
 fi
 
+URL="https://api.opsgenie.com/v2/alerts"
+
 curl -X POST "$URL" \
   -H "Content-Type: application/json" \
   -H "Authorization: GenieKey ${GENIEKEY}" \
